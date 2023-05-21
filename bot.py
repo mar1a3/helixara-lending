@@ -10,7 +10,7 @@ import os
 translator = googletrans.Translator()
 
 # элементы бота
-api = '6029268730:AAHpY2bqJPHdzTmsVkHn7mz2SYe4fycXuz8'
+api = ''
 bot = telebot.TeleBot(api)
 
 # парсер новинок
