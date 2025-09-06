@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Helixara</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" data-aos="fade-down">
+    <div class="container nav-container">
+      <div class="logo">
+        <img class="logo-helixara" src="images/helixara-bioscience.png" alt="Helixara Logo">
+        <img class="logo-swiss" src="images/swiss-precision.png" alt="Swiss Precision">
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-wrapper">
+    <div class="hero-text">
+      <h1><p data-aos="zoom-out-right" data-aos-duration="1500">Swiss Science</p><p data-aos="zoom-out-left" data-aos-duration="1500">for Your Future</p></h1>
+      <img data-aos="zoom-out-down" data-aos-duration="1000" class="hero-img"src="images/about-hero.png" alt="About Hero">
+    </div>
+      <p class="tagline">
+        Helixara is a Swiss biotechnology company specializing in peptide research and <br/> production. 
+        Based in Switzerland — a country known for reliability and pharmaceutical <br/> excellence — 
+        we create solutions that redefine health and longevity.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="what-we-do container" data-aos="fade-up">
+    <div class="what-we-do-info">
+    <h2>What We Do</h2>
+    <p>
+      Our laboratories combine cutting-edge equipment with strict protocols 
+      to achieve purity levels above 99%. Every batch undergoes multi-stage 
+      testing for safety and authenticity.
+    </p>
+    <button class="btn btn-contact" onclick="openModal()">Contact Us</button>
+    </div> 
+      <img class="what-we-do-illustration"src="images/what-we-do-illustration.png" alt="Illustration">
+  </section>
+
+  <!-- INFO CARDS -->
+  <section class="cards container" data-aos="fade-right">
+    <div class="cards-wrapper">
+      <img data-aos="flip-left" src="images/card-one.png" alt="Research">
+    <div class="cards-wrapper-philosophy">
+      <h2>Our Philosophy</h2>
+      <p>We believe that health and longevity can <br/>
+        only be achieved through precision, innovation, 
+        and uncompromising quality. Helixara stands for 
+        the synergy of science and technology.</p>
+        </div>
+    </div>
+    <div class="card-content">
+    <div class="card">
+      <img data-aos="flip-left" class="card-one" src="images/card-one.png" alt="Innovation">
+    </div>
+    <div class="card">
+      <img data-aos="flip-left" class="card-two" src="images/card-two.png" alt="Production">
+    </div>
+    </div>
+  </section>
+
+    <!-- INFO CARDS MOBILE -->
+  <section class="cards-mobile container">
+  <div class="swiper" data-aos="flip-left" data-aos-duration="2000">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/card-one.png" alt="Research"></div>
+    <div class="swiper-slide"><img src="images/card-one.png" alt="Innovation"></div>
+    <div class="swiper-slide"><img src="images/card-two.png" alt="Production"></div>
+  </div>
+  <!-- Навигация (если нужна) -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+    <div class="card-content" data-aos="fade-up">
+    <h2>Our Philosophy</h2>
+      <p>We believe that health and longevity can
+        only be achieved through precision, innovation, 
+        and uncompromising quality. Helixara stands for 
+        the synergy of science and technology.</p>
+        </div>
+  </section>
+
+
+<section class="contact container">
+  <div class="contact-wrapper">
+    <!-- Левая часть: форма -->
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+      </div>
+
+        <p class="form-group-title">Select subject?</p>
+      <div class="form-group-subject">
+        <label><input type="radio" name="subject" value="overall" checked> Overall</label>
+        <label><input type="radio" name="subject" value="products"> Products</label>
+        <label><input type="radio" name="subject" value="partnership"> Partnership</label>
+        <label><input type="radio" name="subject" value="testing"> Testing</label>
+      </div>
+
+      <div class="form-group message">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+      </div>
+
+      <button type="button" class="btn">Send message</button>
+    </form>
+
+    <!-- Правая часть: контакты -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p class="contact-text">
+        Have questions or partnership inquiries?<br>
+        Leave your contact details and our team will reach out.
+      </p>
+      <p class="contact-adress">+1012 3456 789<br> helixara@overall.com</p>
+      <p class="contact-adress">
+        132 Dartmouth Street Boston,<br>
+        Massachusetts 02156 United States
+      </p>
+      <div class="socials">
+          <img src="images/twitter-icon.png" alt="Twitter">
+          <img src="images/ig-icon.png" alt="Instagram">
+          <img src="images/discord-icon.png" alt="Discord">
+      </div>
+      <small>© 2025 Helixara</small><small>All rights reserved</small>
+    </div>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
+
+<!-- Подключение JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+
+  AOS.init({
+    duration: 800, // длительность анимации
+    once: true,    // анимация срабатывает один раз
+  });
+</script>
